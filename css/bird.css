@@ -1,0 +1,236 @@
+/*---------------Resset--------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/*---------------basic--------------- */
+
+*{
+    box-sizing: border-box;
+}
+
+h3{
+    color: #042a2b;
+    display: inline-block;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+h3:hover{
+    color: #5eb1bf;
+}
+
+#hash{
+    font-weight: 700;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+#hash:hover{
+    color: #042a2b;
+}
+
+p{
+    color: #042a2b;
+    display: inline-block;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.container{
+    display: grid;
+    grid-auto-columns: 1fr;
+}
+
+/*---------------left--------------- */
+
+.left{
+    height: 100vh;
+    grid-column: 1/5;
+    background-color: #5eb1bf;
+    position: sticky;
+    top:0px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.logo{
+    position: fixed;
+    right: 2%;
+    top:2%;
+    display: inline;
+    width: 90px;
+    z-index: 100;
+}
+
+.bigpic{
+    width: 60%;
+}
+
+#bigpic-container{
+    text-align: center;
+}
+#bigpic-container img{
+    display: none;
+}
+
+#bigpic-container img.active{
+    display: inline-block;
+}
+
+.circlepics{
+    z-index: 100;
+    position: absolute;
+    top: 50px;
+    left: 88%;
+}
+
+.picitem{
+    height: 50px;
+    width: 50px;
+    border: #042a2b solid 1px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #5eb1bf;
+    margin-bottom: 15px;
+}
+
+.picitem:hover{
+    background-color: #042a2b;
+    cursor: cell;
+}
+
+.info{
+    width: 390px;
+    height: 200px;
+    background-color: #FEFEFE;
+    border: #042a2b 1px solid;
+    position: absolute;
+    bottom: 1px;
+    left: 49px;
+    display: flex;
+    transform: translateX(0);
+    /* 將 sideMenu 左橫移 100%，使他到螢幕外 */
+    transition: 0.4s;
+}
+
+.left label{
+    background-image: url(../img/openeye.svg);
+    background-color: #ffba49;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    border: #042a2b 1px solid;
+    width: 50px;
+    height: 200px;
+    position: absolute;
+    bottom: 1px;
+    left: 0px;
+}
+
+.left label:hover{
+    background-image: url(../img/closeeye.svg);
+}
+
+#menuswitch:checked + .info{
+    transform: translateX(-100%);
+}
+
+#menuswitch{
+    z-index:-10;
+    opacity: 0;
+}
+
+.infotxt{
+    padding: 30px;
+}
+
+/*---------------right--------------- */
+
+
+.right{
+    grid-column: 5/8;
+    background-color: #FEFEFE;
+    padding: 50px;
+}
+
+.list{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.item{
+    width: 150px;
+    height: 300px;
+    margin-top: 10px;
+}
+
+.toppic{
+    position: relative;
+}
+
+.listpic{
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    transition-duration: 0.2s;
+}
+
+.listpic:hover{
+    width: 120%;
+}
+
+.listbg{
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    border: #042a2b solid 1px;
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    background-color: #FEFEFE;
+}
+
+.listbgin{
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    border: #042a2b solid 1px;
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    background-color: #5eb1bf;
+}
+
+.itemname{
+    position: relative;
+    top:220px;
+}
+
