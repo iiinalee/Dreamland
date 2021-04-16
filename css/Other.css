@@ -234,3 +234,123 @@ p{
     top:220px;
 }
 
+/* ----------------- 1024px ----------------- */
+
+@media (max-width: 1024px){
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .left{
+        height: 70vh;
+        width: 100%;
+        z-index: 50;
+    }
+
+    .circlepics{
+        top: 20%;
+        left: 88%;
+    }
+
+    .right{
+        width: 100%;
+    }
+
+    .item{
+        width: 290px;
+        height: 400px;
+        margin-left: 5px;
+        margin-top: 30px;
+    }
+
+    .list{
+        justify-content: space-around;
+
+    }
+
+    .listpic{
+        width: 80%;
+    }
+
+    .listbg{
+        width: 200px;
+        height: 300px;
+        border-radius: 50%;
+    }
+    
+    .listbgin{
+        width: 200px;
+        height: 300px;
+        background-color: #ffba49;
+    }
+
+    .itemname{
+        top:330px;
+    }
+    
+}
+
+
+
+/* ----------------- 414px ----------------- */
+
+@media (max-width: 414px){
+
+    .circlepics{
+        display: flex;
+        width: 300px;
+        height: 100px;
+        top: 85%;
+        left: 10%;
+    }
+
+    .logo{
+        right: 3%;
+        top:2%;
+        width: 70px;
+    }
+
+    .bigpic{
+        width: 70%;
+    }
+
+    .picitem{
+        margin-right: 20px;
+    }
+
+    label{
+        display: none;
+    }
+
+    .info{
+        display: none;
+    }
+
+    .item{
+        width: 110px;
+        height: 160px;
+        margin-left: 5px;
+        margin-top: 30px;
+    }
+
+    .listpic{
+        width: 90%;
+    }
+
+    .listbg{
+        width: 100px;
+        height: 130px;
+    }
+    
+    .listbgin{
+        width: 100px;
+        height: 130px;
+    }
+
+    .itemname{
+        display: none;
+    }
+}
+
